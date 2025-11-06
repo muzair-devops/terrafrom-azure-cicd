@@ -17,7 +17,7 @@ variable "location" {
 variable "storage_account_name" {
   description = "Unique storage account name for Function App"
   type        = string
-  default     = "counter_funtion_terraforma"
+  default     = "counterfunctiontf01"
 }
 
 variable "function_app_name" {
@@ -29,7 +29,7 @@ variable "function_app_name" {
 variable "cosmos_account_name" {
   description = "Name of the Azure Cosmos DB account"
   type        = string
-  default     = "counterfunctiontf01"
+  default     = "mycosmoscounterdbtf01"
 }
 
 variable "cosmos_database_name" {
