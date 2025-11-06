@@ -17,7 +17,7 @@ variable "location" {
 variable "storage_account_name" {
   description = "Unique storage account name for Function App"
   type        = string
-  default     = "counterfuntionterraforma01"
+  default     = "counter_funtion_terraforma"
 }
 
 variable "function_app_name" {
