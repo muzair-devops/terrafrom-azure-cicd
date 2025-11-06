@@ -29,7 +29,7 @@ variable "function_app_name" {
 variable "cosmos_account_name" {
   description = "Name of the Azure Cosmos DB account"
   type        = string
-  default     = "mycosmoscounterdbtf"
+  default     = "counterfunctiontf01"
 }
 
 variable "cosmos_database_name" {
