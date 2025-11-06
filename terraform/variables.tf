@@ -5,7 +5,7 @@
 variable "resource_group_name" {
   description = "Name of the Azure resource group"
   type        = string
-  default     = "visitor-counter-rg1"
+  default     = "visitor-counter-rg01"
 }
 
 variable "location" {
@@ -17,7 +17,7 @@ variable "location" {
 variable "storage_account_name" {
   description = "Unique storage account name for Function App"
   type        = string
-  default     = "azurefuncappstorage01"
+  default     = "counter-funtion"
 }
 
 variable "function_app_name" {
@@ -29,17 +29,17 @@ variable "function_app_name" {
 variable "cosmos_account_name" {
   description = "Name of the Azure Cosmos DB account"
   type        = string
-  default     = "mycosmoscounterdb1234"
+  default     = "mycosmoscounterdb"
 }
 
 variable "cosmos_database_name" {
   description = "Name of the Cosmos DB SQL database"
   type        = string
-  default     = "VisitorDB1"
+  default     = "VisitorDB"
 }
 
 variable "cosmos_container_name" {
   description = "Name of the Cosmos DB container"
   type        = string
-  default     = "CounterContainer1"
+  default     = "CounterContainer"
 }
