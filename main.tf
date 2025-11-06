@@ -48,9 +48,15 @@ resource "azurerm_service_plan" "plan" {
   sku_name            = "Y1"
 }
 
+resource "random_string" "suffix" {
+  length  = 6
+  upper   = false
+  special = false
+}
+
 # --- Cosmos DB ---
 resource "azurerm_cosmosdb_account" "cosmos" {
-  name                = "mycosmoscounterdb1234"
+  name                = "mycosmoscounter${random_string.suffix.result}"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   offer_type          = "Standard"
