@@ -11,7 +11,7 @@ variable "resource_group_name" {
 variable "location" {
   description = "Azure region where resources will be created"
   type        = string
-  default     = "centralus"
+  default     = "East US 2"
 }
 
 variable "storage_account_name" {
