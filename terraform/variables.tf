@@ -11,13 +11,13 @@ variable "resource_group_name" {
 variable "location" {
   description = "Azure region where resources will be created"
   type        = string
-  default     = "eastus2"
+  default     = "centralus"
 }
 
 variable "storage_account_name" {
   description = "Unique storage account name for Function App"
   type        = string
-  default     = "funcappstorage1234"
+  default     = "azurefuncappstorage1234"
 }
 
 variable "function_app_name" {

@@ -19,7 +19,7 @@ variable "resource_group_name" {
 }
 
 variable "location" {
-  default = "eastus2"
+  default = "centralus"
 }
 
 # --- Resource Group ---
@@ -28,9 +28,11 @@ resource "azurerm_resource_group" "rg" {
   location = var.location
 }
 
+
+
 # --- Storage Account (for Function App) ---
 resource "azurerm_storage_account" "storage" {
-  name                     = "funcappstorage1234"
+  name                     = "azurefuncappstorage1234"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"
