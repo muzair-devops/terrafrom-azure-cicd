@@ -15,7 +15,7 @@ provider "azurerm" {
 
 # --- Variables ---
 variable "resource_group_name" {
-  default = "visitor-counter-rg"
+  default = "visitor-counter-rg1"
 }
 
 variable "location" {
@@ -32,7 +32,7 @@ resource "azurerm_resource_group" "rg" {
 
 # --- Storage Account (for Function App) ---
 resource "azurerm_storage_account" "storage" {
-  name                     = "azurefuncappstorage1234"
+  name                     = "azurefuncappstorage01"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"

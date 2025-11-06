@@ -5,7 +5,7 @@
 variable "resource_group_name" {
   description = "Name of the Azure resource group"
   type        = string
-  default     = "visitor-counter-rg"
+  default     = "visitor-counter-rg1"
 }
 
 variable "location" {
@@ -17,7 +17,7 @@ variable "location" {
 variable "storage_account_name" {
   description = "Unique storage account name for Function App"
   type        = string
-  default     = "azurefuncappstorage1234"
+  default     = "azurefuncappstorage01"
 }
 
 variable "function_app_name" {
