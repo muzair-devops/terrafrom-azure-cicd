@@ -5,7 +5,7 @@
 variable "resource_group_name" {
   description = "Name of the Azure resource group"
   type        = string
-  default     = "visitor-counter-rg02"
+  default     = "visitor-counter-rg03"
 }
 
 variable "location" {
@@ -17,7 +17,7 @@ variable "location" {
 variable "storage_account_name" {
   description = "Unique storage account name for Function App"
   type        = string
-  default     = "counterfuntionterraform"
+  default     = "counterfuntionterraformacc"
 }
 
 variable "function_app_name" {
@@ -29,7 +29,7 @@ variable "function_app_name" {
 variable "cosmos_account_name" {
   description = "Name of the Azure Cosmos DB account"
   type        = string
-  default     = "mycosmoscounterdb"
+  default     = "mycosmoscounterdbtf"
 }
 
 variable "cosmos_database_name" {
