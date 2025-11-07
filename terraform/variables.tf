@@ -5,19 +5,19 @@
 variable "resource_group_name" {
   description = "Name of the Azure resource group"
   type        = string
-  default     = "visitor-counter-rg03"
+  default     = "visitor-counter-rg04"
 }
 
 variable "location" {
   description = "Azure region where resources will be created"
   type        = string
-  default     = "westus"
+  default     = "westus2"
 }
 
 variable "storage_account_name" {
   description = "Unique storage account name for Function App"
   type        = string
-  default     = "counterfunctiontf01"
+  default     = "counterfunctiontf03"
 }
 
 variable "function_app_name" {
@@ -29,7 +29,7 @@ variable "function_app_name" {
 variable "cosmos_account_name" {
   description = "Name of the Azure Cosmos DB account"
   type        = string
-  default     = "mycosmoscounterdbtf01"
+  default     = "mycosmoscounterdbtf03"
 }
 
 variable "cosmos_database_name" {
