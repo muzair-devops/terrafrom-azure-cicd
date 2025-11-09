@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 env:
-  AZURE_LOCATION: "westus2"
+  AZURE_LOCATION: ${{ vars.AZURE_LOCATION || 'westus2' }}
   RESOURCE_GROUP: "crc-rg"
   FUNCTIONAPP_NAME: "crc-backend-func-${{ github.run_id }}"
   COSMOS_ACCOUNT: "crc-cosmos-${{ github.run_id }}"
