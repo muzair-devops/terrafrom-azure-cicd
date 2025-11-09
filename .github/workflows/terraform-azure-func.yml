@@ -35,6 +35,17 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+      - name: 🏗️ Create Resource Group if not exists
+        run: |
+          if ! az group show --name ${{ env.RESOURCE_GROUP }} >/dev/null 2>&1; then
+            echo "Creating resource group..."
+            az group create \
+              --name ${{ env.RESOURCE_GROUP }} \
+              --location ${{ env.AZURE_LOCATION }}
+          else
+            echo "✅ Resource group already exists."
+          fi
+
       # ✅ Create Cosmos DB for Table API
       - name: Create Cosmos DB for Table
         run: |
